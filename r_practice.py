@@ -32,8 +32,14 @@ print("---------------------")
 print(data[1])
 
 new = []
-
 for d in data:
     if len(d) < 50:
     	new.append(d)
 print('the length less than 50 words of the total reviews are: ', len(new))
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('the total reviews incluing "good" are: ', len(good))
+print(good[0])
