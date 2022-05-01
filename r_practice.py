@@ -17,7 +17,7 @@ for d in data:
 
 print('the average length of the review is: ', sum_len/len(data))
 
-
+ 
 
 
 
@@ -30,3 +30,10 @@ print('0' in data)
 print(data[0])
 print("---------------------")
 print(data[1])
+
+new = []
+
+for d in data:
+    if len(d) < 50:
+    	new.append(d)
+print('the length less than 50 words of the total reviews are: ', len(new))
